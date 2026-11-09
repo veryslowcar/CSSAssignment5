@@ -82,7 +82,7 @@ jobs:
       run: |
         gcloud run deploy recipe-backend \
           --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/recipe-backend:${{ github.sha }} \
-          --region ${{ secrets.GCP_REGION_KEY }} \
+          --region ${{ secrets.GCP_REGION }} \
           --platform managed \
           --allow-unauthenticated \
           --port 5000 \
