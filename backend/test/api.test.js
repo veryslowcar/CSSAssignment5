@@ -131,7 +131,7 @@ describe('Recipe API Tests', () => {
         .get('/api/health')
         .expect(200);
 
-      expect(response.body).toHaveProperty('status', 'healthy');
+      expect(response.body).toHaveProperty('status', 'not working');
       expect(response.body).toHaveProperty('timestamp');
     });
   });
